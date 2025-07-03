@@ -11,7 +11,7 @@ export default function SignupPagePlayer() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', form);
+      await axios.post('https://turfit-backend.onrender.com/api/auth/signup', form);
       alert('Signup successful');
       navigate('/login');
     } catch (err) {

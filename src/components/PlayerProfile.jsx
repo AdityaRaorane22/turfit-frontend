@@ -16,7 +16,7 @@ export default function PlayerProfile() {
   const [teamNameInput, setTeamNameInput] = useState('');
 
   const fetchProfile = async () => {
-    const res = await axios.get(`http://localhost:5000/api/auth/profile/${userEmail}`);
+    const res = await axios.get(`https://turfit-backend.onrender.com/api/auth/profile/${userEmail}`);
     setProfile(res.data);
     setTeamNameInput(res.data.teamName || '');
   };
@@ -33,7 +33,7 @@ export default function PlayerProfile() {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:5000/api/auth/profile/${userEmail}`, {
+      await axios.put(`https://turfit-backend.onrender.com/api/auth/profile/${userEmail}`, {
         gamesLiked: profile.gamesLiked,
         isTeamRegistered: !!teamNameInput,
         teamName: teamNameInput

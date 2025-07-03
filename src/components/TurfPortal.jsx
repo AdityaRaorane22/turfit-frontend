@@ -7,7 +7,7 @@ export default function TurfPortal() {
   const { userEmail } = useAuth();
 
   const fetchEvents = async () => {
-    const res = await axios.get('http://localhost:5000/api/events');
+    const res = await axios.get('https://turfit-backend.onrender.com/api/events');
     setEvents(res.data);
   };
 
@@ -16,7 +16,7 @@ export default function TurfPortal() {
     if (!confirm) return;
 
     try {
-      await axios.put(`http://localhost:5000/api/events/book-slot/${eventId}/${slotIndex}`, {
+      await axios.put(`https://turfit-backend.onrender.com/api/events/book-slot/${eventId}/${slotIndex}`, {
         playerEmail: userEmail
       });
       alert("Slot booked successfully!");

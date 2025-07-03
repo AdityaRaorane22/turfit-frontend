@@ -3,7 +3,10 @@ import { useAuth } from '../context/AuthContext';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://turfit-backend.onrender.com', {
+  transports: ['websocket'],  // optional but helpful on Render
+});
+
 
 export default function TeamChat() {
   const { userEmail } = useAuth();
@@ -14,14 +17,14 @@ export default function TeamChat() {
 
   useEffect(() => {
     // Fetch profile & join room
-    fetch(`http://localhost:5000/api/auth/profile/${userEmail}`)
+    fetch(`https://turfit-backend.onrender.com/api/auth/profile/${userEmail}`)
       .then(res => res.json())
       .then(async data => {
         if (data.isTeamRegistered) {
           setTeamName(data.teamName);
           socket.emit('join_team', data.teamName);
 
-          const msgRes = await axios.get(`http://localhost:5000/api/messages/${data.teamName}`);
+          const msgRes = await axios.get(`https://turfit-backend.onrender.com/api/messages/${data.teamName}`);
           setMessages(msgRes.data);
         } else {
           alert("You are not registered with a team.");

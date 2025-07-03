@@ -48,7 +48,7 @@ export default function SportEventForm() {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    await axios.post('http://localhost:5000/api/events/create', {
+    await axios.post('https://turfit-backend.onrender.com/api/events/create', {
       ...form,
       createdBy: userEmail
     });
