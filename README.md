@@ -1,8 +1,8 @@
-# TurfIt - Smart Turf Management System
+# TurFit - Smart Turf Management System
 
 ## 🏟️ Overview
 
-TurfIt is a comprehensive turf management platform that bridges the gap between sports facility owners and players. Our system provides real-time booking capabilities, team management, and seamless communication tools to create the ultimate sports facility experience.
+TurFit is a comprehensive turf management platform that bridges the gap between sports facility owners and players. Our system provides real-time booking capabilities, team management, and seamless communication tools to create the ultimate sports facility experience.
 
 ## 🎯 Business Perspective
 
@@ -147,6 +147,6 @@ TurfIt addresses the sports facility market by:
 
 We welcome contributions to TurfIt! Please read our contributing guidelines and submit pull requests for any improvements.
 
-**TurfIt - Revolutionizing Sports Facility Management** 🏆
+**TurFit - Revolutionizing Sports Facility Management** 🏆
 
 *Built with ❤️ for the sports community*
