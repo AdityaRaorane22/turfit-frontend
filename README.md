@@ -1,7 +1,8 @@
 # TurFit - Smart Turf Management System
 
 ## PowerBI Dashbaord
-<img width="802" height="875" alt="image" src="https://github.com/user-attachments/assets/4a76998e-f53f-41ab-be30-e76126042744" />
+<img width="1101" height="1208" alt="image" src="https://github.com/user-attachments/assets/021998e8-234b-4c00-8b99-494bbdcf21da" />
+
 
 
 ## 🏟️ Overview
