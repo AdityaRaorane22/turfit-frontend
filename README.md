@@ -1,5 +1,9 @@
 # TurFit - Smart Turf Management System
 
+## PowerBI Dashbaord
+<img width="802" height="875" alt="image" src="https://github.com/user-attachments/assets/4a76998e-f53f-41ab-be30-e76126042744" />
+
+
 ## 🏟️ Overview
 
 TurFit is a comprehensive turf management platform that bridges the gap between sports facility owners and players. Our system provides real-time booking capabilities, team management, and seamless communication tools to create the ultimate sports facility experience.
